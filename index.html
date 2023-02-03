@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Goals List</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js'></script>
+</head>
+
+<body>
+
+    <form>
+        <div class='container'>
+            <div class='yellow'></div>
+            <div class='container-main'>
+                <h1>To-Do List</h1>
+                <div>
+
+                    <div class='textInARow'>
+                        <button type='button' class='sortAsc' id='sortAsc'><img src="sort1.png" alt=""/></button>
+                        <button type='button' class='sortDesc' id='sortDesc'><img src="sort2.png" alt=""/></button>
+                    </div>
+                    <div class='taskList'>
+                        <div class='taskItem'>
+                            <input class='input' type='text' id='inputId'>
+                            <button type='button' class='deleteTask'>X</button>
+                            <button type='button' class='dragTask'>DRAG</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='button-div'>
+                    <button type='sumbit' class='add'>
+                        <div class='plus'>+</div>
+                        <div class='btn-text'>Добавить</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src='script.js'></script>
+</body>
+
+</html>
